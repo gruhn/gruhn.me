@@ -1,0 +1,60 @@
+
+body {
+  font-family: "PT Mono", monospace;
+  background-color: #252525;
+  color: #fff;
+}
+
+h1::before {
+  content: '> ';
+}
+
+p {
+  line-height: 1.2;
+  margin: 1.2em 0;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin-bottom: .5em;
+}
+li::before {
+  content: '* ';
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  padding: 5vh 10vw;
+  max-width: 600px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+
+.pseudo-cursor {
+  display: inline-block;
+  height: 1em;
+  width: .5em;
+  background-color: #fff;
+
+  vertical-align: text-bottom;
+
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
