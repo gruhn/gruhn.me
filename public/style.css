@@ -15,24 +15,24 @@ p {
 }
 
 ul {
-  padding-left: 1em;
+  padding: 0;
 }
 
 li {
   list-style-type: none;
-  list-style-position: inside;
   margin-bottom: .5em;
+  margin-left: 4ch;
 }
 li::before {
-  content: '* ';
+  display: inline-block;
+  margin-left: -2ch;
+  margin-right: 1ch;
+  content: '*';
 }
 
 a {
-  color: inherit;
+  color: #9ce156;
   text-decoration: underline;
-}
-a:hover {
-  text-decoration: none;
 }
 
 .container {
@@ -48,11 +48,12 @@ a:hover {
 
 .pseudo-cursor {
   display: inline-block;
-  height: 1em;
-  width: .5em;
-  background-color: #fff;
-
+  height: 1.2em;
+  width: 1ch;
+  margin: 0 .2ch;
   vertical-align: text-bottom;
+
+  background-color: #fff;
 
   animation-name: blink;
   animation-duration: 1s;
