@@ -9,43 +9,77 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono">
   <link rel="stylesheet" href="style.css">
+
+  <script async>
+    document.addEventListener("DOMContentLoaded", function() {
+      var commandEl = document.querySelector(".type-out")
+      var outputEl = document.querySelector(".output")
+      var pseudoCursorEl = document.querySelector(".pseudo-cursor")
+
+      var commandText = commandEl.innerText
+      commandEl.innerText = ""
+
+      outputEl.style.visibility = "hidden"
+
+      function typeOut(text, i, callback) {
+        return function() {
+          if (i <= text.length) {
+            commandEl.innerText = text.substring(0, i);
+
+            window.setTimeout(typeOut(text, i+1, callback), 75)
+          } else {
+            callback()
+          }
+        }
+      }
+
+      window.setTimeout(
+        typeOut(commandText, 1, function() {
+          outputEl.style.visibility = "visible"
+          pseudoCursorEl.style.display = "none"
+        }), 2250
+      );
+    })
+  </script>
 </head>
 
 <body>
   <div class="container">
-    <h1>cat hello.md</h1>
+    <h1>
+      <span class="type-out">cat hello.md</span><span class="pseudo-cursor"></span>
+    </h1>
 
-    <p>My name is Niklas Gruhn.</p>
+    <section class="output">
+      <p>My name is Niklas Gruhn.</p>
 
-    <p>I'm a graduate computer science student mainly doing front-end engeneering.</p>
+      <p>I'm a graduate computer science student mainly doing front-end engeneering.</p>
 
-    <p>I enjoy</p>
+      <p>I enjoy</p>
 
-    <ul>
-      <li>functional programming</li>
-      <li>building <a href="https://jamstack.org">JAMStack</a> web apps</li>
-      <li>overthinking UX design</li>
-      <li>optimizing loading and rendering performance</li>
-    </ul>
+      <ul>
+        <li>functional programming</li>
+        <li>building <a href="https://jamstack.org">JAMStack</a> web apps</li>
+        <li>overthinking UX design</li>
+        <li>optimizing loading and rendering performance</li>
+      </ul>
 
-    <p>In my free time I'm</p>
+      <p>In my free time I'm</p>
 
-    <ul>
-      <li>eating massive amounts of pastries</li>
-      <li>having epic parties</li>
-      <li>wondering about the nature of our universe</li>
-    </ul>
+      <ul>
+        <li>eating massive amounts of pastries</li>
+        <li>having epic parties</li>
+        <li>wondering about the nature of our universe</li>
+      </ul>
 
-    <p>
-      Check out my stuff on <a href="https://github.com/gruhn">GitHub</a>
-      or hit me a message <a href="mailto:niklas@gruhn.me">niklas@gruhn.me</a>.
-    </p>
+      <p>
+        Check out my stuff on <a href="https://github.com/gruhn">GitHub</a>
+        or hit me a message <a href="mailto:niklas@gruhn.me">niklas@gruhn.me</a>.
+      </p>
 
-    <br>
+      <br>
 
-    <p>
-      Cheers!<span class="pseudo-cursor"></span>
-    </p>
+      <p>Cheers!</p>
+    </section>
   </div>
 </body>
 </html>

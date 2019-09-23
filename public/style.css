@@ -2,9 +2,13 @@
 body {
   font-family: "PT Mono", monospace;
   background-color: #252525;
-  color: #fff;
+  color: #e4e4e4;
 }
 
+h1 {
+  white-space: nowrap;
+  color: #fff;
+}
 h1::before {
   content: '$ ';
 }
@@ -41,8 +45,11 @@ a {
 }
 
 @keyframes blink {
+  from, to {
+    opacity: 0;
+  }
   50% {
-    opacity: 0.0;
+    opacity: 1;
   }
 }
 
@@ -51,11 +58,11 @@ a {
   height: 1.2em;
   width: 1ch;
   margin: 0 .2ch;
-  vertical-align: text-bottom;
+  vertical-align: top;
 
   background-color: #fff;
 
   animation-name: blink;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  animation-duration: .75s;
+  animation-iteration-count: 3;
 }
