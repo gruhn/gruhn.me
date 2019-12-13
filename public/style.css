@@ -9,9 +9,6 @@ h1 {
   white-space: nowrap;
   color: #fff;
 }
-h1::before {
-  content: '$ ';
-}
 
 p {
   line-height: 1.3;
