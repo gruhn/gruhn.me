@@ -19,8 +19,6 @@
       var commandText = commandEl.innerText
       commandEl.innerText = ""
 
-      outputEl.style.visibility = "hidden"
-
       function typeOut(text, i, callback) {
         return function() {
           if (i <= text.length) {
@@ -35,7 +33,7 @@
 
       window.setTimeout(
         typeOut(commandText, 1, function() {
-          outputEl.style.visibility = "visible"
+          outputEl.classList.add("printed")
           pseudoCursorEl.style.display = "none"
         }), 2250
       );
@@ -59,8 +57,8 @@
       <ul>
         <li>functional programming</li>
         <li>building <a href="https://immutablewebapps.org">Immutable Web Apps</a></li>
-        <li>overthinking UX design</li>
-        <li>optimizing loading and rendering performance</li>
+        <li>over-optimizing UX design</li>
+        <li>improving loading and rendering performance</li>
       </ul>
 
       <p>In my free time I'm</p>

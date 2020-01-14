@@ -63,3 +63,13 @@ a {
   animation-duration: .75s;
   animation-iteration-count: 3;
 }
+
+.output {
+  transition: max-height 80ms steps(40);
+  
+  max-height: 0;
+  overflow: hidden;
+}
+.output.printed {
+  max-height: 40em;
+}
