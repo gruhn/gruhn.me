@@ -3,6 +3,7 @@ body {
   font-family: "PT Mono", monospace;
   background-color: #252525;
   color: #e4e4e4;
+  overflow-y: scroll;
 }
 
 h1 {
@@ -66,10 +67,10 @@ a {
 
 .output {
   transition: max-height 80ms steps(40);
-  
+
   max-height: 0;
   overflow: hidden;
 }
 .output.printed {
-  max-height: 40em;
+  max-height: 100em;
 }
