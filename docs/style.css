@@ -53,6 +53,13 @@ header img {
   margin-right: .3em;
 }
 
+blockquote {
+  font-style: italic;
+  padding-left: .8em;
+  margin-left: .5em;
+  border-left: 2px solid #cdcdcd;
+}
+
 .headline h1 {
   margin: 0;
 }
