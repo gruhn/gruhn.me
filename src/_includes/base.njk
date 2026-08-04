@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Niklas Gruhn" href="/feed.xml">
+
+  <title>{{ title }}</title>
+{%- if description %}
+  <meta name="description" content="{{ description }}">
+{%- endif %}
+{%- if styles %}
+
+  <style>
+{{ styles | safe }}
+  </style>
+{%- endif %}
+</head>
+<body>
+  <main>
+    <header>
+      <a href="/" class="author">
+        Niklas Gruhn / Blog
+      </a>
+
+      <div class="socials">
+        <a href="/feed.xml" title="RSS">
+          <img alt="RSS feed" src="/rss.svg">
+        </a>
+
+        <a href="https://github.com/gruhn" title="GitHub">
+          <img alt="GitHub logo" src="/github-mark.svg">
+        </a>
+      </div>
+    </header>
+
+{{ content | safe }}
+  </main>
+</body>
+</html>
