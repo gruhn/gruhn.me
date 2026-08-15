@@ -8,4 +8,10 @@ layout: base.njk
       </div>
 
 {{ content | safe }}
+
+      {% if itemHN %}
+      <div class="comments">
+        <a href="https://news.ycombinator.com/item?id={{ itemHN }}">Comments on Hacker News</a>
+      </div>
+      {% endif %}
     </article>
