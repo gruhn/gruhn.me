@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1000 413.29342"
+   font-family="Arial, Helvetica, sans-serif"
+   version="1.1"
+   id="svg16"
+   sodipodi:docname="consciousness-diagram-3.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   width="1000"
+   height="413.29343"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0263459"
+     inkscape:cx="549.52234"
+     inkscape:cy="172.45648"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16" />
+  <defs
+     id="defs2">
+    <marker
+       id="arrowhead"
+       viewBox="0 0 10 10"
+       refX="8.5"
+       refY="5"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#3a3a3a"
+         id="path1" />
+    </marker>
+    <marker
+       id="arrowhead-gray"
+       viewBox="0 0 10 10"
+       refX="8.5"
+       refY="5"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#b0b0ac"
+         id="path2" />
+    </marker>
+    <clipPath
+       id="earthClip">
+      <circle
+         cx="850"
+         cy="300"
+         r="90"
+         id="circle2" />
+    </clipPath>
+  </defs>
+  <!-- background -->
+  <rect
+     x="0"
+     y="0"
+     width="1000"
+     height="413.29343"
+     fill="#FAF9F6"
+     id="rect2"
+     style="fill:none;stroke-width:0.859084" />
+  <!-- ================= EYE : consciousness ================= -->
+  <g
+     id="g5"
+     transform="translate(0,-110.02994)">
+    <path
+       d="m 60,300 c 0,-30 40,-45 90,-45 50,0 90,15 90,45 0,30 -40,45 -90,45 -50,0 -90,-15 -90,-45 z"
+       fill="#ffffff"
+       stroke="#2d3142"
+       stroke-width="2.5"
+       id="path3"
+       style="opacity:0.39994538" />
+    <circle
+       cx="150"
+       cy="300"
+       r="34"
+       fill="#4a90a4"
+       stroke="#2d3142"
+       stroke-width="1.5"
+       id="circle3"
+       style="opacity:0.39994538" />
+    <circle
+       cx="150"
+       cy="300"
+       r="15"
+       fill="#1d2333"
+       id="circle4"
+       style="opacity:0.39994538" />
+    <circle
+       cx="141"
+       cy="289"
+       r="5"
+       fill="#ffffff"
+       opacity="0.85"
+       id="circle5"
+       style="opacity:0.39994538" />
+    <text
+       x="150"
+       y="490"
+       text-anchor="middle"
+       font-size="16px"
+       font-weight="600"
+       fill="#6b6b6b"
+       id="text5">consciousness</text>
+  </g>
+  <!-- ================= BODY ================= -->
+  <g
+     fill="#52616b"
+     stroke="#3a4750"
+     stroke-width="1.5"
+     id="g10"
+     transform="translate(0,-110.02994)">
+    <circle
+       cx="500"
+       cy="165"
+       r="34"
+       id="circle6" />
+    <rect
+       x="460"
+       y="200"
+       width="80"
+       height="135"
+       rx="24"
+       id="rect6" />
+    <rect
+       x="491.5947"
+       y="83.075378"
+       width="24"
+       height="105"
+       rx="12"
+       transform="rotate(14.701478)"
+       id="rect7" />
+    <rect
+       x="425.31079"
+       y="366.2431"
+       width="24"
+       height="105"
+       rx="12"
+       transform="rotate(-18.437487)"
+       id="rect8" />
+    <rect
+       x="512.48743"
+       y="252.23869"
+       width="28"
+       height="122"
+       rx="14"
+       transform="rotate(8.79791)"
+       id="rect9" />
+    <rect
+       x="433.63074"
+       y="422.65396"
+       width="28"
+       height="122"
+       rx="14"
+       transform="rotate(-10.841232)"
+       id="rect10" />
+  </g>
+  <text
+     x="500"
+     y="379.97006"
+     text-anchor="middle"
+     font-size="16px"
+     font-weight="600"
+     fill="#6b6b6b"
+     id="text10"><tspan
+       sodipodi:role="line"
+       id="tspan16"
+       x="500"
+       y="379.97006">body/brain</tspan><tspan
+       sodipodi:role="line"
+       id="tspan17"
+       x="500"
+       y="399.97006">GPUs/weights</tspan></text>
+  <!-- ================= EARTH : environment ================= -->
+  <g
+     id="g13"
+     transform="translate(0,-110.02994)">
+    <circle
+       cx="850"
+       cy="300"
+       r="90"
+       fill="#3b7ea1"
+       stroke="#1f4e6b"
+       stroke-width="2.5"
+       id="circle10" />
+    <g
+       clip-path="url(#earthClip)"
+       id="g12">
+      <!-- South America (west side) -->
+      <path
+         d="m 756.7,246.2 c 4.2,-3.7 16.1,-3.7 23,-2.2 6.9,1.5 13.4,7 18.4,11 5,4 10.7,8.4 11.5,13.2 0.8,4.8 -5,9.9 -6.9,15.4 -1.9,5.5 -2.7,12.1 -4.6,17.6 -1.9,5.5 -4.8,10.6 -6.9,15.4 -2.1,4.8 -4,8.4 -5.5,13.2 -1.6,4.8 -2.2,15.4 -3.7,15.4 -1.5,0 -3.2,-10.3 -5.5,-15.4 -2.3,-5.1 -6,-9.9 -8.3,-15.4 -2.3,-5.5 -3.6,-12.1 -5.5,-17.6 -1.9,-5.5 -4.6,-10.3 -6,-15.4 -1.4,-5.1 -2.3,-9.5 -2.3,-15.4 0,-5.9 -1.9,-16.1 2.3,-19.8 z"
+         fill="#5ea35c"
+         stroke="#3f7a3a"
+         stroke-width="1"
+         id="path10" />
+      <!-- Africa (east side, with Gulf of Guinea notch and Horn) -->
+      <path
+         d="m 831.4,249.4 c 6.6,-2.4 22,-5.2 31.2,-4.8 9.2,0.4 19.2,4 24,7.2 4.8,3.2 1,8.2 4.8,12 3.8,3.8 17.4,7.4 17.8,11 0.4,3.6 -13.5,6.4 -15.4,10.6 -1.9,4.2 4.6,9.2 3.8,14.4 -0.8,5.2 -5.6,11.2 -8.6,16.8 -3,5.6 -6.4,11.6 -9.6,16.8 -3.2,5.2 -6.8,10.8 -9.6,14.4 -2.8,3.6 -4.2,8 -7.2,7.2 -3,-0.8 -7.6,-7.4 -11,-12 -3.5,-4.6 -7.5,-10.2 -9.6,-15.4 -2.2,-5.2 -4.4,-10.8 -3.4,-15.8 1,-5 7,-10.4 9.6,-14.4 2.6,-4 7,-6.8 6.2,-9.6 -0.8,-2.8 -7.8,-5.4 -11,-7.2 -3.2,-1.8 -5.4,-1.8 -8.2,-3.8 -2.8,-2 -6.5,-5.2 -8.6,-8.2 -2.1,-3 -4.6,-6.4 -3.8,-9.6 0.8,-3.2 2,-7.2 8.6,-9.6 z"
+         fill="#5ea35c"
+         stroke="#3f7a3a"
+         stroke-width="1"
+         id="path11" />
+      <!-- Madagascar -->
+      <ellipse
+         cx="905"
+         cy="327"
+         rx="4.5"
+         ry="10"
+         fill="#5ea35c"
+         stroke="#3f7a3a"
+         stroke-width="1"
+         transform="rotate(15,905,327)"
+         id="ellipse11" />
+      <ellipse
+         cx="822"
+         cy="262"
+         rx="38"
+         ry="22"
+         fill="#ffffff"
+         opacity="0.12"
+         transform="rotate(-20,822,262)"
+         id="ellipse12" />
+    </g>
+    <text
+       x="850"
+       y="490"
+       text-anchor="middle"
+       font-size="16px"
+       font-weight="600"
+       fill="#6b6b6b"
+       id="text12"><tspan
+         sodipodi:role="line"
+         x="850"
+         y="490"
+         id="tspan20">environment</tspan></text>
+  </g>
+  <!-- ================= ARROWS: eye <-> body ================= -->
+  <!-- top: body -> eye (curves up) -->
+  <path
+     d="m 430,79.970062 q -90,-50 -180,0"
+     fill="none"
+     stroke="#3a3a3a"
+     stroke-width="3"
+     stroke-linecap="round"
+     marker-end="url(#arrowhead)"
+     id="path13"
+     style="stroke:#adadad;stroke-opacity:1;marker-end:url(#arrowhead-gray)" />
+  <!-- bottom: eye -> body (curves down, unlabeled, grayed out) -->
+  <path
+     d="m 250,299.97006 q 90,50 180,0"
+     fill="none"
+     stroke="#b0b0ac"
+     stroke-width="3"
+     stroke-linecap="round"
+     marker-end="url(#arrowhead-gray)"
+     id="path14"
+     style="stroke:#aeaeae;stroke-opacity:1" />
+  <!-- red cross over unlabeled arrow -->
+  <g
+     stroke="#d6362a"
+     stroke-width="4.5"
+     stroke-linecap="round"
+     id="g15"
+     transform="matrix(5.2391919,0,0,5.2391919,-1631.3197,-2087.5616)">
+    <line
+       x1="328"
+       y1="423"
+       x2="352"
+       y2="447"
+       id="line14" />
+    <line
+       x1="328"
+       y1="447"
+       x2="352"
+       y2="423"
+       id="line15" />
+  </g>
+  <!-- ================= ARROWS: body <-> earth ================= -->
+  <!-- top: earth -> body (curves up) -->
+  <path
+     d="m 750,79.970062 q -78,-50 -155,0"
+     fill="none"
+     stroke="#3a3a3a"
+     stroke-width="3"
+     stroke-linecap="round"
+     marker-end="url(#arrowhead)"
+     id="path15" />
+  <text
+     x="672"
+     y="34.970062"
+     text-anchor="middle"
+     font-size="17px"
+     font-weight="500"
+     fill="#2d2d2d"
+     id="text15">sensory inputs</text>
+  <!-- bottom: body -> earth (curves down) -->
+  <path
+     d="m 595,299.97006 q 77,50 155,0"
+     fill="none"
+     stroke="#3a3a3a"
+     stroke-width="3"
+     stroke-linecap="round"
+     marker-end="url(#arrowhead)"
+     id="path16" />
+  <text
+     x="672"
+     y="347.97006"
+     text-anchor="middle"
+     font-size="17px"
+     font-weight="500"
+     fill="#2d2d2d"
+     id="text16">actions</text>
+</svg>
