@@ -1,5 +1,6 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import markdownItFootnote from "markdown-it-footnote";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 const readableDate = new Intl.DateTimeFormat("en-US", {
   month: "short",
@@ -21,6 +22,8 @@ export default function (eleventyConfig) {
       author: { name: "Niklas Gruhn" },
     },
   });
+
+	eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.amendLibrary("md", (md) => md.use(markdownItFootnote));
 
