@@ -1,0 +1,103 @@
+:root {
+  --ink: #17231d;
+  --muted: #69766f;
+  --accent: #edff71;
+  --accent-dark: #d7ee49;
+  --dark: #173f2c;
+}
+
+.viewer {
+  position: relative;
+  height: clamp(410px, 58vh, 650px);
+  overflow: hidden;
+  border-radius: 22px;
+  background: #cbd0c8;
+  box-shadow: 0 12px 32px rgb(32 46 37 / 10%);
+  margin-top: 1rem;
+}
+
+#street-view { position: relative; z-index: 0; width: 100%; height: 100%; border: 0; }
+
+.loading {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #dfe4dc;
+  color: #4d5b53;
+}
+
+.loading[hidden] { display: none; }
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgb(23 63 44 / 20%);
+  border-top-color: var(--dark);
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.action {
+  border: 1px solid gray;
+  border-radius: 999px;
+  padding: .45em .7em;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.action:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: #f1f1ed;
+  text-decoration: none;
+}
+.action-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.15em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.action:focus-visible, a:focus-visible {
+  outline: 3px solid black;
+  outline-offset: 3px;
+}
+.action:disabled,
+.action[aria-disabled="true"] {
+  opacity: .55;
+  cursor: wait;
+  pointer-events: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0 4rem 0;
+}
+
+noscript { display: block; padding: 30px; text-align: center; }
+
+@media (max-width: 760px) {
+  .viewer { height: 55vh; min-height: 370px; border-radius: 16px; }
+  .details { gap: 30px; padding: 30px 5px 0; }
+  .actions { align-items: flex-start; flex-direction: column; gap: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
