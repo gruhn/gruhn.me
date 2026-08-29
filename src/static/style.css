@@ -90,11 +90,14 @@ figcaption {
   padding: 0;
 }
 .post-list li {
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
 }
 .post-list time {
-  display: inline-block;
-  min-width: 8em;
+  display: block;
+  padding-right: 1.5rem;
+  white-space: nowrap;
 }
 
 .comments {
