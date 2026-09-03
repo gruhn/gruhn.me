@@ -9,6 +9,10 @@ const readableDate = new Intl.DateTimeFormat("en-US", {
   timeZone: "UTC",
 });
 
+export function formatReadableDate(date) {
+  return readableDate.format(typeof date === "string" ? new Date(date) : date);
+}
+
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(feedPlugin, {
     type: "rss",
@@ -30,7 +34,7 @@ export default function (eleventyConfig) {
   // Copied to the output root, so assets keep their current URLs (/style.css etc).
   eleventyConfig.addPassthroughCopy({ "src/static": "." });
 
-  eleventyConfig.addFilter("readableDate", (date) => readableDate.format(date));
+  eleventyConfig.addFilter("readableDate", formatReadableDate);
   eleventyConfig.addFilter("isoDate", (date) => date.toISOString().slice(0, 10));
 
   return {

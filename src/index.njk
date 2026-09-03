@@ -1,15 +1,21 @@
 ---
 layout: base.njk
-title: Niklas Gruhn
+title: Blog
 permalink: /index.html
 ---
-    <article>
-      <ul class="post-list">
+
+    <div class="info-box">
+      Interview with me on <a href="https://www.bbc.com/audio/play/m0030xh4">The BBC Media Show</a> (~11:00)
+      discussing meat proxies and AI writing.
+    </div>
+
+    <h3>Posts</h3>
+
+    <ul class="post-list">
 {%- for post in collections.post | reverse %}
-        <li>
-          <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
-          <a href="{{ post.url }}">{{ post.data.title }}</a>
-        </li>
+      <li>
+        <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </li>
 {%- endfor %}
-      </ul>
-    </article>
+    </ul>

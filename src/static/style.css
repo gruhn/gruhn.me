@@ -105,3 +105,11 @@ figcaption {
   padding: 1em 0;
   margin-top: 2em;
 }
+
+.info-box {
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  border: 1px solid #878787;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
