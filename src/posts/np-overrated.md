@@ -1,5 +1,6 @@
 ---
 title: NP-overrated
+date: 2026-08-13
 itemHN: 49291268
 ---
 

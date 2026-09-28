@@ -1,5 +1,6 @@
 ---
 title: Don't be a meat proxy
+date: 2026-08-03
 itemHN: 49151933
 ---
 

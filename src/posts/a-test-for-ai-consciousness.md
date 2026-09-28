@@ -1,5 +1,6 @@
 ---
 title: A test for AI consciousness
+date: 2026-08-16
 ---
 Whether AI is, or ever will be, conscious is hotly contested.
 Simply asking the models can never resolve the question definitively.
