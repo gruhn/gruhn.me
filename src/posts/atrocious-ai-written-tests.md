@@ -6,7 +6,7 @@ date: 2026-09-29
 I stopped reviewing tests.
 It's too tempting when there are 10,000 other lines to review.
 But recently I got a failing test after changing a **comment** in a source file.
-I had see what on earth these tests are doing that we're running all day, every day.
+I had to see what on earth these tests are doing that we're running all day, every day.
 
 That particular test was scanning source files with a regex for the keyword "wall-clock".
 My bad for using that in a comment.
